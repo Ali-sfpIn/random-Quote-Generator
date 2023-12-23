@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <script
+      defer
+      src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/script.js"></script>
+    <title>randomQuote</title>
+  </head>
+  <body>
+    <div
+      class="container my-5 mx-auto p-3 rounded fw-bold d-flex flex-column align-items-center"
+    >
+      <div class="dropdown dropdown-center">
+        <button
+          class="btn btn-secondary dropdown-toggle btn-category"
+          type="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Category
+        </button>
+        <ul class="dropdown-menu dropdown-menu-dark">
+          <li><a class="dropdown-item text-center" href="#">happiness</a></li>
+          <li><a class="dropdown-item text-center" href="#">future</a></li>
+          <li><a class="dropdown-item text-center" href="#">love</a></li>
+          <li><a class="dropdown-item text-center" href="#">money</a></li>
+        </ul>
+      </div>
+      <div
+        class="quote-container d-flex flex-column align-items-center my-auto user-select-none"
+      >
+        <p class="quote text-white text-center">
+          everything is new by this time...
+        </p>
+        by:
+        <p class="author text-white">ali</p>
+        <div class="loading d-flex d-none">
+          <?xml version="1.0" encoding="utf-8"?>
+          <svg
+            class="me-2"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            style="
+              margin: auto;
+              background: none;
+              display: block;
+              shape-rendering: auto;
+            "
+            width="20px"
+            height="20px"
+            viewBox="0 0 100 100"
+            preserveAspectRatio="xMidYMid"
+          >
+            <circle
+              cx="50"
+              cy="50"
+              r="43"
+              stroke-width="8"
+              stroke="#1d0e0b"
+              stroke-dasharray="67.54424205218055 67.54424205218055"
+              fill="none"
+              stroke-linecap="round"
+            >
+              <animateTransform
+                attributeName="transform"
+                type="rotate"
+                repeatCount="indefinite"
+                dur="1s"
+                keyTimes="0;1"
+                values="0 50 50;360 50 50"
+              ></animateTransform>
+            </circle>
+          </svg>
+          <span>loading</span>
+        </div>
+      </div>
+      <button type="button" class="btn btn-secondary btn-generate">
+        generate
+      </button>
+    </div>
+  </body>
+</html>
